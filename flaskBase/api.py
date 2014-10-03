@@ -12,7 +12,7 @@ API = restful.Api(app)
 
 class SampleRessource(restful.Resource):
 
-    @login_required
+    #@login_required
     def get(self):
         sm = SampleModel.query.first()
         return {'sample_model': serial_from(sm)}, 200
