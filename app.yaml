@@ -10,3 +10,4 @@ handlers:
 
 skip_files:
 - ^venv/.*
+- ^(.*/)?.*\.py[co]$
