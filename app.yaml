@@ -1,0 +1,9 @@
+application: 267241325360
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: flaskBase.app
