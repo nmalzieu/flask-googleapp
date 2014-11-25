@@ -17,4 +17,4 @@ class SampleRessource(restful.Resource):
         sm = SampleModel.query.first()
         return {'sample_model': serial_from(sm)}, 200
 
-API.add_resource(SampleRessource, '/api/sample/')
+API.add_resource(SampleRessource, '/api/v1/sample/')
