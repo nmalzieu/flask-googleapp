@@ -1,11 +1,11 @@
 import flask
 from flask.ext import restful
 
-from . import app
-from db import db
-from decorators import login_required
+from flaskBase import app
+from flaskBase.db import db
+from flaskBase.decorators import login_required
 
-from models import SampleModel, serial_from
+from flaskBase.models import SampleModel, serial_from
 
 API = restful.Api(app)
 
